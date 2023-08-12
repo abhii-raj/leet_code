@@ -7,7 +7,7 @@ class Solution:
         
         reverse = 0 
         digit = 0 
-        while(x // 10**digit != 0): 
+        while(x // (10**digit) != 0): 
             reverse = (reverse*10) + (x// (10**digit)%10)
             digit +=1
         return ( reverse == x )
