@@ -1,16 +1,15 @@
 class Solution:
     def isPalindrome(self, x: int) -> bool:
-        a = x
 
         # a negative number cant have palinfdrome 
         if(x<0):
             return False
         else:
             reverse = 0 
-            while(a>0):
-                num = a%10 
-                reverse = (reverse*10) + num 
-                a = a//10 
+            digit = 0 
+            while(x // 10**digit): 
+                reverse = (reverse*10) + (x// (10**digit)%10)
+                digit +=1
         if( reverse == x ):
             return True 
         else:
