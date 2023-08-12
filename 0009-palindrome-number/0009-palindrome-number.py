@@ -4,12 +4,12 @@ class Solution:
         # a negative number cant have palinfdrome 
         if(x<0):
             return False
-        else:
-            reverse = 0 
-            digit = 0 
-            while(x // 10**digit): 
-                reverse = (reverse*10) + (x// (10**digit)%10)
-                digit +=1
+        
+        reverse = 0 
+        digit = 0 
+        while(x // 10**digit != 0): 
+            reverse = (reverse*10) + (x// (10**digit)%10)
+            digit +=1
         return ( reverse == x )
         
 
