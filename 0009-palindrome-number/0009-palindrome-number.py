@@ -10,8 +10,6 @@ class Solution:
             while(x // 10**digit): 
                 reverse = (reverse*10) + (x// (10**digit)%10)
                 digit +=1
-        if( reverse == x ):
-            return True 
-        else:
-            return False 
+        return ( reverse == x )
+        
 
