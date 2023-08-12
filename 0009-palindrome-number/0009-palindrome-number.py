@@ -2,7 +2,7 @@ class Solution:
     def isPalindrome(self, x: int) -> bool:
 
         # a negative number cant have palinfdrome 
-        if(x<0):
+        if x<0:
             return False
         
         reverse = 0 
